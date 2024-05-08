@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Name of person</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle">&#9776;</button>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to the Future</h2>
+            <p>Where innovation meets creativity.</p>
+            <div class="hero-images">
+                <img src="information.gif" alt="Futuristic Image">
+                <img src="phone.gif" alt="Futuristic Image">
+                <img src="suitcase.gif" alt="Futuristic Image">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hey there! I'm a futuristic designer passionate about creating visually stunning experiences.</p>
+            <!-- Add more about yourself here -->
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Portfolio items will go here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <!-- Contact form or social media links will go here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="social-media.png" alt="Twitter"></a>
+                <a href="#"><img src="github.png" alt="GitHub"></a>
+            </div>
+            <p>&copy; 2024 Futuristic Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+ const heroImages = document.querySelectorAll('.hero-images img');
+let currentImageIndex = 0;
+
+setInterval(() => {
+    const currentImage = heroImages[currentImageIndex];
+    const nextImageIndex = (currentImageIndex + 1) % heroImages.length;
+    const nextImage = heroImages[nextImageIndex];
+
+    currentImage.style.zIndex = 0; // Lower zIndex of current image
+    nextImage.style.zIndex = 1; // Raise zIndex of next image
+
+    currentImage.classList.remove('fade-in');
+    currentImage.classList.add('slide-out');
+
+    setTimeout(() => {
+        currentImage.style.display = 'none';
+        nextImage.style.display = 'block';
+        nextImage.classList.remove('slide-out');
+        nextImage.classList.add('fade-in');
+    }, 500);
+
+    currentImageIndex = nextImageIndex;
+}, 2000); // Change the delay to 3 seconds (3000 milliseconds)
+
+const sections = document.querySelectorAll('section');
+
+const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
+
+const toggleSectionAnimation = () => {
+    sections.forEach(section => {
+        if (isInViewport(section)) {
+            section.classList.add('in-view');
+        } else {
+            section.classList.remove('in-view');
+        }
+    });
+};
+
+document.addEventListener('scroll', toggleSectionAnimation);
+window.addEventListener('load', toggleSectionAnimation);
+
+    </script>
+</body>
+</html>

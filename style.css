@@ -1,0 +1,266 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #00ccff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+#hero {
+    background-color: #00ccff72;
+    padding: 200px 0;
+    text-align: center;
+    position: relative; /* Make sure the images are positioned relative to the hero section */
+    overflow: hidden; /* Hide overflowing images */
+}
+.hero-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Change opacity to 1 to ensure images are visible */
+    transition: opacity 0.5s ease; 
+    z-index: 1;/* Fade animation */
+}
+
+.hero-images img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Slide animation */
+    opacity: 1; /* Change opacity to 1 to ensure images are visible */
+    position: relative;
+    z-index: 0;
+}
+
+#hero h2,
+#hero p {
+    z-index: 2; /* Ensure text is above images */
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInDown 1s ease;
+}
+
+#hero p {
+    font-size: 20px;
+    animation: slideInUp 1s ease;
+}
+
+/* About section styles */
+#about {
+    background-color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease;
+}
+.fade-in {
+    opacity: 1;
+}
+
+.slide-in {
+    transform: translateX(0);
+}
+
+.slide-out {
+    transform: translateX(-100%);
+}
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease;
+}
+
+/* Portfolio section styles */
+#portfolio {
+    background-color: #f0f0f0;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease;
+}
+/* Smooth scrolling transitions */
+section {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Fade in and scale up animation for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #00ccff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Footer styles */
+/* Footer styles */
+footer {
+    background-color:whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust size of icons */
+    height: 40px; /* Adjust size of icons */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Add hover effect */
+}
+
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
