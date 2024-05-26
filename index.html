@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Oppong-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-up {
+    animation: slideUp 2s ease-out forwards;
+  }
+
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+  }
+
+
+ @keyframes typing {
+    0% { width: 0; }
+    50% { width: 9ch; } /* Adjust width to match the length of "About Me" */
+    100% { width: 0; }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+  }
+      </style>
+      
+      
+      
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Chris Oppong</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle">&#9776;</button>
+        </div>
+    </header>
+    <section id="introduction">
+        <div class="container">
+          <div class="ports" style="background-color: #3375ab;">
+            <div class="image" style="display: flex; max-width: fit-content;">
+              <div class="head hidden" id="welcomeText">
+                <h1 style="font-size: 0px;color: white;">WELCOME</h1>
+                <h2 style="font-size: 0px;color: white;">To the official website of Chris Oppong</h2>
+              </div>
+              <img src="3.jpg" alt="" style="max-height: 50%; max-width: 100%;" class="hidden" id="img1">
+              <img src="4.jpg" alt="" style="max-height: 50%; max-width: 100%;" class="hidden" id="img2">
+              <img src="5.jpg" alt="" style="max-height: 50%; max-width: 100%;" class="hidden" id="img3">
+            </div>           
+          </div>
+        </div>
+      </section>
+      
+    
+    
+    
+      <section id="about">
+        <div class="container">
+          <h2 class="typewriter">About Me</h2>
+          <div class="port" style="line-height: 1.5;background-color: #3375ab;">
+            <img src="2.jpg" alt="" style="max-width: 30%; max-height: 50%;">
+
+            <div class="port">
+              <h3 style="size: 400; line-height: 30.5px;font-weight: 400;">I am a passionate advocate for education and innovation  the Ashanti Region of Ghana.    
+                I am currently pursuing my undergraduate studies in Materials Engineering at KNUST.      
+                My life experiences have taught me that we are 100% responsible for our own lives and we must shape them ourselves.
+              </h3>
+            </div>
+            <div class="port">          
+                   <h2 style="size: 12px;">Personal Story</h2>
+                   <h3 style="size: 400;line-height: 30.5px;font-weight: 400;">
+                I am a young man who believes in making an impact wherever I find myself. 
+                Creating value in others and myself is my mission. Honesty, truthfulness, and quality are the principles I live by.
+              </h3>
+            </div>               
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="skills">
+        <div class="container">
+            <h2 style="size: 36px;">Skills</h2>
+            <div class="sentence-animation">
+            <div class="sentence">leadership</div>
+            <div class="sentence">Public Speaking</div>
+            <div class="sentence">Python Scripting</div>
+            <div class="sentence">Matlab</div>
+            <div class="sentence">Sight reading of musical scores</div>
+            <div class="sentence">Effective Time Management</div>
+            <div class="sentence">Team Building</div>
+            <div class="sentence">Fund raising</div>
+            <div class="sentence">Writing</div>
+            <div class="sentence">Problem Solving</div>
+            <div class="sentence">Teaching</div>
+            <div class="sentence">Music composition</div>
+            <div class="sentence">Team work</div>
+            <div class="sentence">Critical Thinking</div>
+            <div class="sentence">Research</div>
+            <div class="sentence">Effective Communication</div>
+            <div class="sentence">Advertising</div>
+            <div class="sentence">Marketing</div>
+            <div class="sentence">Business Development</div>
+            <div class="sentence">Business Strategy</div>
+            <div class="sentence">Resume Writing</div>
+            <div class="sentence">CEO Skills</div>
+            <div class="sentence">Portfolio/Gallery</div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+                <img src="1.jpg" alt="" style="max-width: 50%; max-height: 70%;">
+            
+        </div>
+        <div class="projects">
+            <div class="project" style="background-color: #3375ab;">
+              <img src="7.jpg" alt="" style="height: 40%;width: 30%;margin: 5px;">
+              <div class="port" style="padding: 5px;margin: 10px;">
+                <h3>Experience</h3>
+                <h4 style="margin-top: 5%;align-self:flex-start;font-weight: 400;">
+                  Founder of the Hilth Foundation,
+                   our mission is to solve educational challenges by making education understandable and accessible to all people in Ghana 
+                   and across Africa.
+                </h4>
+                <hr style="margin-bottom: 30px;" >
+                <img src="4.jpg" alt="" style="height: 30%;width: 50%;">
+                <h4 style="margin-top: 5%;align-self:flex-start;margin-bottom: 5px;font-weight: 400;">
+                  Visit to Atwima Koforidua D/A JHS A (November 2022):
+                  Spoke to students about national development, 
+                  their contributions to national development, and sanitation.
+                  Donated books and pens.
+                  Exam Workshop and Donation Drive (July 2023):
+                  Organized an exam workshop for final year students at Atwima Koforidua D/A JHS A.
+                  Donated books, pens, and pencils.
+                </h4>
+                <hr style="margin-bottom: 30px;" >
+                <img src="3.jpg" alt="" style="height: 30%;width: 50%;">
+                <h4 style="margin-top: 5%;margin-bottom: 5px;font-weight: 400;">
+                    Donated 20 packs of sanitary pads to WINE-KNUST to support their sanitary pad initiative.
+                </h4>
+                <hr style="margin-bottom: 30px;" >
+                <img src="6.jpg" alt="" style="height: 1%;width: 50%;">
+
+                <h4 style="margin-top: 5%;margin-bottom: 5px;font-weight: 400;">
+                  Visit to Kwadaso SDA JHS A:
+                  Helped students identify their interests and pursue them wholeheartedly.
+                </h4>
+               </div>
+            </div>
+            <div class="project" style="background-color: #3375ab;">
+              <img src="9.jpg"  alt=""style="height: 50%;width: 40%;margin: 5px;">
+             <div class="port" style="margin-left: 10px;margin-right: 10px;">
+              <h3>Experience</h3>
+              <h4 style="margin-top: 5%;align-self:flex-start;font-weight: 400;">
+                STEM Education Venture:
+                Developed a powerful bot to enhance students' studies by generating images,
+                converting text to audio, and video, allowing students to learn in diverse ways.
+
+
+              </h4>
+              <h3 style="margin-top: 50px;">Services</h3>
+              <h4 style="margin-bottom: 5px;font-weight: 400;line-height: 25px;">
+                Tech-related services (building websites and mobile apps, data analysis, etc.)
+                Affordable Pricing:
+                Our services are affordable and tailored to meet your needs.
+               
+                I meet clients to discuss their work, reach an agreement,
+                and sign a contract. Partial payment is made upfront to cater to materials and other necessary expenses.
+              </h4>
+             </div>
+             </div>
+            <div class="project" style="background-color: #3375ab;">
+              <img src="8.jpg" alt=""style="height: 50%;width: 40%; margin:5px;">
+             <div class="port" style="margin-top: 10px;margin-bottom: 10px;margin-left: 10px;margin-right: 10px;">
+              <h3>
+                Services
+              </h3>
+              <h4 style="margin-top: 5%;margin-bottom: 5%;">
+
+              </h4>
+              <h3 style = "font-weight: 400; margin-bottom: 5px;">
+                Music teaching
+                How to play the organ
+              </h3>
+             </div>
+            </div>
+            <div class="project" style="background-color: #3375ab;">
+              <img src="10.jpg" alt=""style="height: 50%;width: 40%; margin: 5px;">
+              <div class="port" style="margin-top: 10px;margin-bottom: 10px;margin-left: 10px;margin-right: 10px;">
+                <h3>Services</h3>
+               <h4 style="margin-top: 5%;margin-bottom: 5%;font-weight: 400;">Writing services</h4>
+               <h4 style="margin: 5px; font-weight: 400;">Proofreading</h4>
+               <h4 style="margin: 5px;font-weight: 400;">Thesis writing</h4>
+               <h4 style="margin: 5px;font-weight: 400;">Any other writing needs</h4>
+              </div>
+             </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="" class="contact_form">
+              <input type="text" placeholder="Name" >
+              <input type="email" name="" id="" placeholder="Email">
+              <input type="text" name="" id="" placeholder="Type your message">
+            </form>
+            <a href="https://mail.google.com/"><button style="width: 200px;height: 30px;border-radius: 5px;margin: 50px;" c>Send Message</button></a>
+            <div class="social-icons" style="margin: 40px;">
+              <a href="#"><img src="telephone.png" alt=""></a>
+              <h5 style="color: white;">+233248634726</h5>
+              <a href="https://mail.google.com/"><img src="gmail.png" alt=""></a>
+              <h5 style="color: white;">oppongchristian5555@gmail.com</h5>
+            </div>
+        </div>
+       
+    </section>
+
+    <footer>
+        <div class="container" style="position: sticky;">
+            <div class="social-icons" style="position: sticky;">
+              <a href="https://www.facebook.com/profile.php?id=61550291195438&mibextid=LQQJ4d"><img src="facebook.png" alt="facebook"></a>
+              <a href="https://www.instagram.com/chris_oppong1?igsh=bTF0eXJlODhhdWh4&utm_source=qr"><img src="instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/chris-oppong1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://x.com/Chris_Oppong1?t=bzzNeHD9bCOOWk1K__jDpA&s=09"><img src="social-media.png" alt="Twitter"></a>
+            </div>
+            <p>&copy; 2024 Chris Oppong. All rights reserved.</p>
+        </div>
+    </footer>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const heroImages = document.querySelectorAll('.ports img');
+    let currentImageIndex = 0;
+
+    setInterval(() => {
+        const currentImage = heroImages[currentImageIndex];
+        const nextImageIndex = (currentImageIndex + 1) % heroImages.length;
+        const nextImage = heroImages[nextImageIndex];
+
+        currentImage.style.zIndex = 0;
+        nextImage.style.zIndex = 1;
+
+        currentImage.classList.remove('fade-in');
+        currentImage.classList.add('fade-out');
+
+        setTimeout(() => {
+            currentImage.style.display = 'none';
+            nextImage.style.display = 'flex';
+            nextImage.classList.remove('fade-out');
+            nextImage.classList.add('fade-in');
+        }, 500);
+
+        currentImageIndex = nextImageIndex;
+    }, 4000);
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+});
+function toggleMenu(x) {
+    // Add or remove the change class to the icon
+    x.classList.toggle("change");
+    // Add or remove the change class to the menu
+    document.querySelector(".sidebar").classList.toggle("change");
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+      animateSentences();
+  });
+
+  function animateSentences() {
+      const sentences = document.querySelectorAll(".sentence");
+      let index = 0;
+
+      function displaySentence() {
+          if (index < sentences.length) {
+              sentences[index].style.display = "block";
+              setTimeout(() => {
+                  sentences[index].style.display = "none";
+                  index++;
+                  displaySentence();
+              }, 2000); // Display each sentence for 1 second
+          } else {
+              index = 0; // Reset index to repeat the animation
+              displaySentence();
+          }
+      }
+
+      displaySentence();
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const welcomeText = document.getElementById('welcomeText');
+    const images = document.querySelectorAll('.image img');
+
+    function handleScroll() {
+      const rect = welcomeText.getBoundingClientRect();
+      const isVisible = (rect.top >= 0) && (rect.bottom <= window.innerHeight);
+      
+      if (isVisible) {
+        welcomeText.classList.add('slide-up');
+        welcomeText.classList.remove('hidden');
+        welcomeText.classList.add('visible');
+      }
+    }
+
+    function handleInitialLoad() {
+      welcomeText.classList.add('slide-up');
+      welcomeText.classList.remove('hidden');
+      welcomeText.classList.add('visible');
+      
+      images.forEach(image => {
+        image.classList.remove('hidden');
+        image.classList.add('visible');
+      });
+    }
+
+    // Trigger animations on load
+    handleInitialLoad();
+
+    // Attach scroll event listener
+    window.addEventListener('scroll', handleScroll);
+  });
+</script>
+
+
+
+</body>
+</html>
